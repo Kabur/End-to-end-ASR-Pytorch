@@ -50,8 +50,9 @@ class Solver():
    
     def progress(self,msg):
         ''' Verbose function for updating progress on stdout'''
-        if self.paras.verbose and self.step%TRAIN_WER_STEP==0:
-            print('[{}] {}'.format(human_format(self.step),msg).ljust(100),end='\r')
+        pass
+        # if self.paras.verbose and self.step%TRAIN_WER_STEP==0:
+        #     print('[{}] {}'.format(human_format(self.step),msg).ljust(100),end='\r')
 
     def fetch_data(self,x,y):
         '''Unbucket batch and compute input length & label length'''
